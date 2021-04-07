@@ -10,6 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/loadDescription"
             android:layout_width="wrap_content"
@@ -32,6 +33,7 @@
             android:layout_marginEnd="16dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +51,7 @@
             app:layout_constraintEnd_toStartOf="@+id/nextButton"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/baseImage" />
+            app:layout_constraintTop_toBottomOf="@+id/rotateButton" />
 
         <Button
             android:id="@+id/loadBaseButton"
@@ -68,12 +70,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:onClick="next"
             android:text="@string/next"
+            android:visibility="gone"
             app:backgroundTint="@color/Green"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/cancelButton"
-            app:layout_constraintTop_toBottomOf="@+id/baseImage" />
+            app:layout_constraintTop_toBottomOf="@+id/rotateButton" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="367dp" />
+
+        <ImageButton
+            android:id="@+id/rotateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/BlueBackground"
+            android:onClick="rotateImage"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/baseImage"
+            app:srcCompat="@android:drawable/ic_menu_rotate" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
