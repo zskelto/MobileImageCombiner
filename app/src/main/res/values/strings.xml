@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">MobileImageCombiner</string>
+    <string name="app_name">Image Combiner</string>
+    <string name="description">This app will let you place an image on top of another image. Press start to begin!</string>
+    <string name="start">Start!</string>
+    <string name="load_description">Load in a base image!</string>
+    <string name="load_image">Load Image</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
 </resources>
