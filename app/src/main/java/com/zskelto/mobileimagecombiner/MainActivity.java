@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String IMAGE_COMBINER = "com.zskelto.MobileImageCombiner.IMAGECOMBINER";
+    public static final String BASE = "BaseImage";
+    public static final String TOP = "TopImage";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
